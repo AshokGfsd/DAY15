@@ -1,5 +1,8 @@
 # _Day 12 Task_
 ### _**1.HTML FORM**_
+
+- [_**HTML-FORM Deploy**_](https://ashokgfsdgame.neocities.org/Form/)
+
 - [_**HTML-FORM Folder**_](./Form/)
 
 - [_**HTML-FORM HTML**_](./Form/index.html)
@@ -10,7 +13,9 @@
 
 ### _**2.HTML PAGINATION**_
 
-- [_**HTML-PAGINATION Folder**_](./pagination/index.html)
+- [_**HTML-PAGINATION Deploy**_](https://ashokgfsdgame.neocities.org/pagination/)
+
+- [_**HTML-PAGINATION Folder**_](./pagination/)
 
 - [_**HTML-PAGINATION HTML**_](./pagination/index.html)
 

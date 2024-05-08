@@ -231,7 +231,7 @@ table_th3.innerText = "Email";
 
 paginationData();
 async function paginationData() {
-  let res = await fetch("https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json");
+  let res = await fetch("./pagenation.json");
   let JsonFormat = await res.json();
 //  console.log(JsonFormat);
 
