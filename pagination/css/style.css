@@ -1,0 +1,45 @@
+#root {
+    background-color: black;
+    color: white;
+    border: solid rgb(255, 0, 157);
+}
+
+#title {
+    color: rgb(255, 0, 157);
+}
+
+/* #nav-bar {
+    position: relative;
+    top: 17cm;
+} */
+
+#description {
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#table-head {
+    color: rgb(255, 0, 157);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 1px lightgreen;
+}
+
+#t-body {
+    color: rgb(66, 62, 62);
+    text-align: center;
+
+    td:nth-child(1) {
+        color: rgb(255, 0, 157);
+    }
+
+    td:nth-child(2) {
+        color: white;
+    }
+
+    td:nth-child(3) {
+        color: white;
+    }
+}
