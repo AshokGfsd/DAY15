@@ -195,7 +195,7 @@ let btn_10 = btnele(
   "btn-outline-primary",
   "id",
   "event-btn-10",
-  "10"
+  "Last"
 );
 //----------------------------------------------------------------
 
@@ -410,8 +410,8 @@ ul_list.append(
   list_7,
   list_8,
   list_9,
-  list_10,
-  list_next
+  list_next,
+  list_10
 );
 list_first.append(btn_first);
 list_pre.append(btn_pre);
