@@ -7,7 +7,7 @@ function setTitle(tagname, attname, attvalue) {
   formbody.setAttribute(attname, attvalue);
   return formbody;
 }
-titlecontent.setAttribute("class","survey-form")
+titlecontent.setAttribute("class", "survey-form");
 
 //-----------------------------------------
 
@@ -67,8 +67,8 @@ let country_label = sixlabel("label", "for", "country", "COUNTRY:");
 let pincode_label = sixlabel("label", "for", "pincode", "PINCODE:");
 let email_label = sixlabel("label", "for", "firstname", "EMAIL:");
 
-fname_label.setAttribute("id","name-label")
-email_label.setAttribute("id","email-label")
+fname_label.setAttribute("id", "name-label");
+email_label.setAttribute("id", "email-label");
 
 function sixlabel(tagname, attname, attvalue, contenttext) {
   let six_label_element = document.createElement(tagname);
@@ -377,18 +377,8 @@ function fooditemsinput(
 let food_label1 = fooditemslabel("label", "for", "food", "Masala dosa");
 let food_label2 = fooditemslabel("label", "for", "food", "Dosa");
 let food_label3 = fooditemslabel("label", "for", "food", "​Butter Chicken​");
-let food_label4 = fooditemslabel(
-  "label",
-  "for",
-  "food",
-  "Dhokla"
-);
-let food_label5 = fooditemslabel(
-  "label",
-  "for",
-  "food",
-  "Pongal"
-);
+let food_label4 = fooditemslabel("label", "for", "food", "Dhokla");
+let food_label5 = fooditemslabel("label", "for", "food", "Pongal");
 
 function fooditemslabel(tagname, attname, attvalue, contenttext) {
   let foodlabel = document.createElement(tagname);
@@ -457,7 +447,7 @@ let table_div = document.createElement("div");
 table_div.classList.add("form-group", "col-md-10");
 
 let tabletag = document.createElement("table");
-tabletag.setAttribute("class", "table");
+tabletag.setAttribute("class", "table table-responsive");
 tabletag.setAttribute("border", "1");
 tabletag.setAttribute("cellspacing", "0");
 tabletag.setAttribute("cellpadding", "");
@@ -483,8 +473,6 @@ let th5 = tableheader("th", "scope", "col", "COUNTRY");
 let th6 = tableheader("th", "scope", "col", "PINCODE");
 let th7 = tableheader("th", "scope", "col", "GENDER");
 let th8 = tableheader("th", "scope", "col", "FOOD");
-
-
 
 function tableheader(tagname, attname, attvalue, contenttext) {
   let tablecol = document.createElement(tagname);
@@ -548,7 +536,7 @@ button_div.append(button1, button2);
 table_div.append(tabletag);
 tabletag.append(tablehead, table_body);
 tablehead.append(tablerow);
-tablerow.append(th1, th2,th9, th3, th4, th5, th6, th7, th8);
+tablerow.append(th1, th2, th9, th3, th4, th5, th6, th7, th8);
 
 //----------------------------------------------------------------
 
@@ -599,30 +587,29 @@ function btnname() {
 
   if (firstname_value == "") {
     alert("Please, Fill the first name");
-  }else if(lastname_value == "" ){
+  } else if (lastname_value == "") {
     alert("Please, Fill the last name");
-  }else if( email_value == "" ){
+  } else if (email_value == "") {
     alert("Please, Fill the Email");
-  }else if( address_value == "" ){
+  } else if (address_value == "") {
     alert("Please, Fill the Address");
-  }else if(state_value == "" ){
+  } else if (state_value == "") {
     alert("Please, Fill the State name");
-  }else if(country_value == "" ){
+  } else if (country_value == "") {
     alert("Please, Fill the country name");
-  }else if(pincode_value == "" ){
+  } else if (pincode_value == "") {
     alert("Please, Fill the pincode");
-  }else if(!(others.checked || male.checked || female.checked)){
+  } else if (!(others.checked || male.checked || female.checked)) {
     alert("Please, select a Gender");
-  }else if (null_value.length < 2) {
+  } else if (null_value.length < 2) {
     alert("Please select minimum 2 Food items Out of 5");
-  }else if( null_value.length == 0){
-    
+  } else if (null_value.length == 0) {
   }
   //-------------------------------------------------------------------------
 
   //? Food items alert when less than 2:-
 
-console.log(res)
+  console.log(res);
   //------------------------------------------------------------------
   //? Checking the input fields are filled and then appending them to the table...
   if (
@@ -632,10 +619,9 @@ console.log(res)
     state_value !== "" &&
     country_value !== "" &&
     pincode_value !== "" &&
-    email_value !== ""&&
+    email_value !== "" &&
     (male.checked || female.checked) &&
     null_value.length >= 2
-  
   ) {
     //-------------------------------------------------------------------
     //? creating the td elements:-
@@ -673,11 +659,23 @@ console.log(res)
         res[7].append(checkbox_value[j].value);
       }
     }
-    res[8].append(email_value)
+    res[8].append(email_value);
     //-------------------------------------------------------------------
     //? td appending...
-    row1.append(res[0], res[1],res[8], res[2], res[3], res[4], res[5], res[6], res[7]);
+    row1.append(
+      res[0],
+      res[1],
+      res[8],
+      res[2],
+      res[3],
+      res[4],
+      res[5],
+      res[6],
+      res[7]
+    );
   }
+  const reset = document.getElementById("reset");
 
+  reset.click();
   //-------------------------------------------------------------------
 }
